@@ -2,8 +2,9 @@
   "name": "nodejs-intro",
   "version": "1.0.0",
   "description": "Repo created to play around with Node.js",
-  "main": "app.js",
+  "main": "moduleSystem/app.js",
   "scripts": {
+    "start": "nodemon app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -17,6 +18,8 @@
   },
   "homepage": "https://github.com/erick-medina/nodejs-intro#readme",
   "dependencies": {
+    "chalk": "^4.0.0",
+    "nodemon": "^2.0.4",
     "validator": "^13.0.0"
   }
 }
