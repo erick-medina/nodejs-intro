@@ -28,5 +28,21 @@ console.log(notesConsole);*/
  * ****/
 
 const validator = require('validator');
+const log = console.log;
 
-console.log(validator.isEmail('erick@hotmail.com'));
+log(validator.isEmail('erick@hotmail.com'));
+
+// Challenge
+const chalk = require('chalk');
+
+log(chalk.white('Hello') + ' World' + chalk.red('!'));
+log(chalk.blue.bold('I am a blue guy'));
+log(chalk.blue.red('Someone is red as hell'));
+
+const greenMsg = chalk.red.inverse('Error');
+log(greenMsg);
+
+/*** global npm modules and nodemon
+ * ****/
+
+
