@@ -1,1 +1,22 @@
-[{"title":"Make a shopping list","body":"Shopping"},{"title":"Select a random playlist","body":"Listen to music"},{"title":"Still need to work on a project","body":"Study for my workshop"}]
+[
+  {
+    "title": "Make a shopping list",
+    "body": "Shopping"
+  },
+  {
+    "title": "Select a random playlist",
+    "body": "Listen to music"
+  },
+  {
+    "title": "Still need to work on a project",
+    "body": "Study for my workshop"
+  },
+  {
+    "title": "dance",
+    "body": "dance to rain on me"
+  },
+  {
+    "title": "sing",
+    "body": "sing to ET"
+  }
+]
