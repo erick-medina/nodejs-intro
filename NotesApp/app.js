@@ -2,7 +2,7 @@
  * ****/
 
 const yargs = require('yargs');
-const notes = require('./../ModuleSystem/notes.js');
+const notes = require('./notes.js');
 
 yargs.command({
     command: 'add',
@@ -30,7 +30,7 @@ yargs.command({
             describe: 'Note title',
             demandOption: true,
             type: 'string'
-        },
+        }
     },
     handler: (argv) => notes.removeNote(argv.title)
 });
@@ -38,13 +38,24 @@ yargs.command({
 yargs.command({
     command: 'read',
     describe: 'Read a note',
-    handler: () => console.log('Reading the note')
+    builder: {
+      title: {
+          describe: 'Note title',
+          demandOption: true,
+          type: 'string'
+      }
+    },
+    handler(argv) {
+        notes.readNotes(argv.title)
+    }
 });
 
 yargs.command ({
     command: 'list',
     describe: 'List your notes',
-    handler: () => console.log('Listing out all notes')
+    handler() {
+        notes.listNotes()
+    }
 });
 
 yargs.parse();
