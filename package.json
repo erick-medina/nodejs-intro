@@ -2,7 +2,7 @@
   "name": "nodejs-intro",
   "version": "1.0.0",
   "description": "Repo created to play around with Node.js",
-  "main": "ModuleSystem/app.js",
+  "main": "module-system/app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
